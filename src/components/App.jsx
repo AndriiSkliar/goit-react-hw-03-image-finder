@@ -87,7 +87,7 @@ export class App extends Component {
         )}
         {isLoading && <Loader />}
         {data && <ImageGallery data={data} openModal={this.openModal}/>}
-        {data && data.length > 0 && (
+        {data && data.length > 11 && (
           <Button onClick={this.handleLoadMore}>Load More</Button>
         )}
         {isOpenModal && (
